@@ -12,7 +12,7 @@ app.use(cors());
 
 app.get('/store-info', async (req, res) => {
     try {
-        const response = await axios.get('https://plugin.tebex.io/information', {
+        const response = await axios.get('https://idyn.tebex.io/', {
             headers: {
                 'X-Tebex-Secret': TELEX_API_SECRET
             }
